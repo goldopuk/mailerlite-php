@@ -1,23 +1,12 @@
 {
-    "name": "mailerlite/mailerlite-php",
-    "description": "MailerLite PHP SDK",
+    "name": "goldopuk/mailerlite-php",
+    "description": "MailerLite PHP SDK for Laravel 10",
     "keywords": [
-        "MailerLite",
-        "mailerlite",
-        "sdk",
-        "email",
-        "marketing"
+
     ],
-    "homepage": "https://github.com/mailerlite/mailerlite-php",
+    "homepage": "https://github.com/goldopuk/mailerlite-php",
     "license": "MIT",
     "type": "library",
-    "authors": [
-        {
-            "name": "Remigijus Rekerta",
-            "email": "remigijus.rekerta@mailerlite.com",
-            "role": "Developer"
-        }
-    ],
     "require": {
         "ext-json": "*",
         "php": "^7.4|^8.0",
@@ -25,18 +14,23 @@
         "php-http/discovery": "^1.9",
         "php-http/httplug": "^2.1",
         "psr/http-client-implementation": "^1.0",
-        "psr/http-message": "^1.0"
+        "psr/http-message": "^1.0 || ^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.5.15 || ^8.4 || ^9.0",
         "php-http/mock-client": "^1.0",
         "php-http/message": "^1.0",
         "mockery/mockery": "^0.9.4",
-        "guzzlehttp/psr7": "^1.5.2",
+        "guzzlehttp/psr7": "^2.6.1",
         "http-interop/http-factory-guzzle": "^1.0",
         "php-http/guzzle7-adapter": "^0.1",
         "friendsofphp/php-cs-fixer": "^2.18",
         "phpstan/phpstan": "^1.10"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "autoload": {
         "psr-4": {
